@@ -31,3 +31,8 @@ Description : Indique l'état actuel de la sécurité de l'appareil (généralem
 Description : Tente d'exécuter la commande id en passant par l'utilitaire su (SuperUser).
 
 Note sur l'erreur : Elle a échoué (invalid uid/gid '-c') parce que sur certains émulateurs ou versions d'Android, la syntaxe du binaire su est différente ou le paramètre -c n'est pas reconnu de cette manière. Cependant, comme vous êtes déjà en mode adb root, cette commande est redondante.
+
+Interprétation des résultats :
+uid=0(root) confirme que vous avez les privilèges root
+Un état "orange" ou "yellow" pour verifiedbootstate indique que l'intégrité du système n'est plus garantie
+La commande su teste si vous pouvez obtenir les privilèges superutilisateur à l'intérieur du shell
