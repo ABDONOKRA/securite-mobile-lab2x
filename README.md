@@ -1,4 +1,4 @@
-** LAB 2 : Rooting Android**
+**LAB 2 : Rooting Android**
 Étape 1 : Rooter l'AVD
 
 <img width="830" height="151" alt="image" src="https://github.com/user-attachments/assets/be148751-ef65-4154-bc9b-2e5cedeb484c" />
