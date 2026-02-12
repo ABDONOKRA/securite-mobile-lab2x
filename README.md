@@ -12,7 +12,7 @@
 
 <img width="1824" height="424" alt="image" src="https://github.com/user-attachments/assets/75f13c27-2c4f-4a7e-b08f-202b2c91b332" />
 
-1. adb root
+1. ```adb root```
 Description : Redémarre le démon ADB (adbd) sur l'appareil avec les privilèges root (administrateur). Cela permet d'accéder aux fichiers système protégés.
 
 2. adb shell id
