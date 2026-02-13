@@ -40,5 +40,8 @@ Note sur l'erreur : Elle a échoué (invalid uid/gid '-c') parce que sur certain
 <img width="1401" height="117" alt="image" src="https://github.com/user-attachments/assets/65296c20-4532-4b32-8f16-10292a831dd7" />
 cette commande nessaicite une aparaile physique
 <img width="943" height="102" alt="image" src="https://github.com/user-attachments/assets/07b1262a-3669-49d4-8f7e-0085b436db8b" />
+# Resultat de fichier de log 
+<img width="1239" height="999" alt="image" src="https://github.com/user-attachments/assets/5a958631-eeba-46d7-8662-1d27b6e08e27" />
+
 
 
