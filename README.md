@@ -10,7 +10,8 @@
 >Exécution de la commande adb root. Le système confirme le redémarrage du démon ADB (adbd) avec les droits d'administrateur (root). Cette étape est cruciale pour accéder aux fichiers système sensibles et effectuer des tests d'intrusion sur l'application mobile.
 
 
-<img width="1824" height="424" alt="image" src="https://github.com/user-attachments/assets/75f13c27-2c4f-4a7e-b08f-202b2c91b332" />
+
+
 <img width="1800" height="748" alt="image" src="https://github.com/user-attachments/assets/ce564363-4629-4fca-8a54-57c905bba480" />
 
 
@@ -34,4 +35,4 @@ Description : Tente d'exécuter la commande id en passant par l'utilitaire su (S
 
 Note sur l'erreur : Elle a échoué (invalid uid/gid '-c') parce que sur certains émulateurs ou versions d'Android, la syntaxe du binaire su est différente ou le paramètre -c n'est pas reconnu de cette manière. Cependant, comme vous êtes déjà en mode adb root, cette commande est redondante.
 
-
+<img width="1248" height="264" alt="image" src="https://github.com/user-attachments/assets/2af064f2-93a2-488c-91bb-a59ed9e68939" />
