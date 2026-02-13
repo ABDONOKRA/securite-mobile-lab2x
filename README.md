@@ -38,4 +38,7 @@ Note sur l'erreur : Elle a échoué (invalid uid/gid '-c') parce que sur certain
 <img width="1248" height="264" alt="image" src="https://github.com/user-attachments/assets/2af064f2-93a2-488c-91bb-a59ed9e68939" />
 # Journalisation :
 <img width="1401" height="117" alt="image" src="https://github.com/user-attachments/assets/65296c20-4532-4b32-8f16-10292a831dd7" />
+cette commande nessaicite une aparaile physique
+<img width="943" height="102" alt="image" src="https://github.com/user-attachments/assets/07b1262a-3669-49d4-8f7e-0085b436db8b" />
+
 
