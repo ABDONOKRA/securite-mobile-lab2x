@@ -43,11 +43,19 @@ cette commande nessaicite une aparaile physique
 # Resultat de fichier de log 
 <img width="1239" height="999" alt="image" src="https://github.com/user-attachments/assets/5a958631-eeba-46d7-8662-1d27b6e08e27" />
 
+## 📋 Étape 2 : Fiche Périmètre de l'Audit de Sécurité
 
-App + Version	GestionDesTaches3 (Version 1.0)
-Support	Émulateur Android (AVD) / HP EliteBook 830 G5
-Objectif	Analyser le processus de rooting et évaluer les impacts sur la sécurité du système.
-Données	Utilisation exclusive de données fictives (aucun identifiant réel utilisé).
-Réseau	Environnement de test isolé (Localhost / Réseau Wi-Fi de laboratoire).
+Cette section définit le cadre technique et les limites de l'audit de sécurité réalisé sur l'application mobile.
 
+| Élément | Détails de l'Audit |
+| :--- | :--- |
+| **Application & Version** | `GestionDesTaches3` (v1.0) |
+| **Support de Test** | Émulateur Android (AVD) sur HP EliteBook 830 G5 |
+| **Système d'Exploitation** | Android (Rooté via ADB) |
+| **Objectif Principal** | Analyse du processus de root et évaluation des vulnérabilités système |
+| **Données de Test** | Données fictives uniquement (Aucune donnée réelle) |
+| **Environnement Réseau** | Réseau local isolé (Lab Environment) |
+| **Outils Utilisés** | ADB (Android Debug Bridge), PowerShell |
 
+### 🛡️ Justification du Périmètre
+Le périmètre a été défini pour garantir un environnement de test **maîtrisé** et **éthique**. L'utilisation de données fictives et d'un réseau isolé permet d'éviter tout impact sur des systèmes de production ou des données personnelles réelles.
