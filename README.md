@@ -11,6 +11,8 @@
 
 
 <img width="1824" height="424" alt="image" src="https://github.com/user-attachments/assets/75f13c27-2c4f-4a7e-b08f-202b2c91b332" />
+<img width="1800" height="748" alt="image" src="https://github.com/user-attachments/assets/ce564363-4629-4fca-8a54-57c905bba480" />
+
 
 1. ```adb root```
 Description : Redémarre le démon ADB (adbd) sur l'appareil avec les privilèges root (administrateur). Cela permet d'accéder aux fichiers système protégés.
