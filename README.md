@@ -44,4 +44,10 @@ cette commande nessaicite une aparaile physique
 <img width="1239" height="999" alt="image" src="https://github.com/user-attachments/assets/5a958631-eeba-46d7-8662-1d27b6e08e27" />
 
 
+App + Version	GestionDesTaches3 (Version 1.0)
+Support	Émulateur Android (AVD) / HP EliteBook 830 G5
+Objectif	Analyser le processus de rooting et évaluer les impacts sur la sécurité du système.
+Données	Utilisation exclusive de données fictives (aucun identifiant réel utilisé).
+Réseau	Environnement de test isolé (Localhost / Réseau Wi-Fi de laboratoire).
+
 
