@@ -239,6 +239,8 @@ Pour vos futures présentations, utilisez des outils d'annotation sur vos captur
 ## Étape 17 : Remise à zéro AVD (obligatoire fin de séance)
 <img width="544" height="735" alt="image" src="https://github.com/user-attachments/assets/2b07fae3-ff90-411e-9639-279d6097f52c" />
 
+## Étape 18 : Remise à zéro device labo (si utilisé)
+besoin dun apparail physique 
 
 
 
