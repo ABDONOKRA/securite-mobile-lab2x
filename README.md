@@ -93,3 +93,5 @@ La sécurité Android repose sur une structure multi-couches protégeant les don
     <br> ``` adb shell getprop ro.boot.verifiedbootstate ```
 <img width="960" height="93" alt="image" src="https://github.com/user-attachments/assets/a634409d-2c85-42bc-8a6a-0ee80cf4bc58" />
 
+# Résumé de la technologie (3 lignes) :
+L'AVB introduit une vérification d'intégrité moderne qui assure que chaque partition du système est authentique avant d'être chargée. Il ajoute également une protection contre le rollback, empêchant l'installation de versions obsolètes du système qui pourraient contenir des failles de sécurité connues. Ce mécanisme garantit que l'appareil reste toujours sur une version logicielle sécurisée et approuvée.
