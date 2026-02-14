@@ -49,7 +49,7 @@ Cette section définit le cadre technique et les limites de l'audit de sécurit�
 
 | Élément | Détails de l'Audit |
 | :--- | :--- |
-| **Application & Version** | `GestionDesTaches3` (v1.0) |
+| **Application & Version** | `DIVA` (v1.0) |
 | **Support de Test** | Émulateur Android (AVD) sur HP EliteBook 830 G5 |
 | **Système d'Exploitation** | Android (Rooté via ADB) |
 | **Objectif Principal** | Analyse du processus de root et évaluation des vulnérabilités système |
