@@ -59,5 +59,5 @@ Cette section définit le cadre technique et les limites de l'audit de sécurit�
 
 ### 🛡️ Justification du Périmètre
 Le périmètre a été défini pour garantir un environnement de test **maîtrisé** et **éthique**. L'utilisation de données fictives et d'un réseau isolé permet d'éviter tout impact sur des systèmes de production ou des données personnelles réelles.
-
+# Étape 3 : Démarrer un AVD propre
 <img width="830" height="151" alt="image" src="https://github.com/user-attachments/assets/be148751-ef65-4154-bc9b-2e5cedeb484c" />
