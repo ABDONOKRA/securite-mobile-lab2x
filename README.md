@@ -95,3 +95,7 @@ La sécurité Android repose sur une structure multi-couches protégeant les don
 
 # Résumé de la technologie (3 lignes) :
 L'AVB introduit une vérification d'intégrité moderne qui assure que chaque partition du système est authentique avant d'être chargée. Il ajoute également une protection contre le rollback, empêchant l'installation de versions obsolètes du système qui pourraient contenir des failles de sécurité connues. Ce mécanisme garantit que l'appareil reste toujours sur une version logicielle sécurisée et approuvée.
+
+
+# Résumé en 4 phrases :
+Le rooting consiste à acquérir les privilèges de "super-utilisateur" sur le système Android, permettant de dépasser les restrictions imposées par le fabricant. Cette action modifie profondément les mécanismes de protection natifs et la confiance globale du système d'exploitation. Bien qu'utile en laboratoire pour observer des comportements techniques précis, cette manipulation reste risquée car elle expose l'appareil à des menaces accrues. Par conséquent, un environnement rooté nécessite un isolement strict, une traçabilité complète des actions et un reset systématique après les tests.
