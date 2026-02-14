@@ -82,4 +82,11 @@ Le périmètre a été défini pour garantir un environnement de test **maîtris
   * resume :
 
 La sécurité Android repose sur une structure multi-couches protégeant les données et le système. Le sandboxing isole chaque application dans un environnement fermé pour empêcher l'accès aux données des autres apps. Le modèle de permissions assure un contrôle strict sur l'accès aux ressources sensibles comme les contacts ou la caméra. Enfin, l'isolation et l'intégrité globale verrouillent le système contre les modifications non autorisées. Le rooting compromet ces barrières en offrant un accès total, ce qui brise la structure de protection native. Ce mécanisme est comparable à un bâtiment sécurisé dont on forcerait les portes blindées.
+# Étape 7 : Analyse du Verified Boot (Démarrage Vérifié)
+* 1. Concepts Fondamentaux :
+    *  Objectif principal : Garantir que le système d'exploitation qui démarre est exactement celui prévu par le fabricant, sans aucune modification malveillante.
+
+* Chain of Trust (Chaîne de confiance) : C'est une série de vérifications où chaque composant matériel ou logiciel vérifie l'authenticité du suivant avant de lui accorder sa confiance, comme une suite de gardiens vérifiant l'identité du suivant.
+
+* Importance de l'intégrité : Si le démarrage est compromis, toutes les protections de sécurité ultérieures peuvent être contournées, comme une forteresse dont la porte principale resterait ouverte.
 
