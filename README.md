@@ -99,3 +99,4 @@ L'AVB introduit une vérification d'intégrité moderne qui assure que chaque pa
 
 # Résumé en 4 phrases :
 Le rooting consiste à acquérir les privilèges de "super-utilisateur" sur le système Android, permettant de dépasser les restrictions imposées par le fabricant. Cette action modifie profondément les mécanismes de protection natifs et la confiance globale du système d'exploitation. Bien qu'utile en laboratoire pour observer des comportements techniques précis, cette manipulation reste risquée car elle expose l'appareil à des menaces accrues. Par conséquent, un environnement rooté nécessite un isolement strict, une traçabilité complète des actions et un reset systématique après les tests.
+# Étape 10 : Intérêt labo (non opérationnel)
