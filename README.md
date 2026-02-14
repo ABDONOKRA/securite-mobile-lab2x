@@ -100,3 +100,58 @@ L'AVB introduit une vérification d'intégrité moderne qui assure que chaque pa
 # Résumé en 4 phrases :
 Le rooting consiste à acquérir les privilèges de "super-utilisateur" sur le système Android, permettant de dépasser les restrictions imposées par le fabricant. Cette action modifie profondément les mécanismes de protection natifs et la confiance globale du système d'exploitation. Bien qu'utile en laboratoire pour observer des comportements techniques précis, cette manipulation reste risquée car elle expose l'appareil à des menaces accrues. Par conséquent, un environnement rooté nécessite un isolement strict, une traçabilité complète des actions et un reset systématique après les tests.
 # Étape 10 : Intérêt labo (non opérationnel)
+
+
+## 🔍 Analyse des Causes Racines (RCA)
+
+### 📌 Contexte
+**Application :** GestionDesTaches3  
+**Environnement :** Laboratoire (privilèges root)  
+**Objectif :** Évaluation de la sécurité du stockage des données sensibles
+
+---
+
+### 🧪 Observations en environnement privilégié
+
+#### 1️⃣ **Observation des artefacts système**
+> **Constat :** Avec des privilèges élevés (root), il est possible d'accéder à des fichiers et répertoires normalement masqués aux utilisateurs standards.
+
+- **Cause identifiée :**  
+  L'application repose uniquement sur les permissions du système d'exploitation pour protéger ses données sensibles, sans mécanisme de chiffrement propre.
+
+- **Impact :**  
+  En cas de compromission du système ou d'accès root, toutes les données deviennent accessibles en clair.
+
+---
+
+#### 2️⃣ **Analyse bas niveau du comportement applicatif**
+> **Constat :** L'interaction avec le noyau et l'observation en temps réel révèlent une absence de chiffrement des données stockées localement.
+
+- **Cause identifiée :**  
+  Absence de chiffrement applicatif. Les données sont écrites directement sur le disque sans transformation (en clair).
+
+- **Impact :**  
+  Fuite de données garantie en cas d'accès physique ou distant avec privilèges administrateur.
+
+---
+
+#### 3️⃣ **Test de robustesse face à un attaquant privilégié**
+> **Constat :** Sous root, on peut lister, lire et copier l'intégralité des fichiers de données sans aucune restriction supplémentaire.
+
+- **Cause identifiée :**  
+  Le modèle de menace de l'application n'inclut pas les attaquants disposant déjà de privilèges élevés. Aucune défense en profondeur n'est implémentée.
+
+- **Impact :**  
+  La confidentialité des données n'est pas assurée dès lors que l'attaquant a franchi la première ligne de défense.
+
+---
+
+### 🔬 Cas d'usage concret (laboratoire)
+```bash
+# Avec privilèges root, nous avons pu :
+$ sudo cat /home/user/.config/gestiondestaches3/taches.db
+# → Données affichées en clair (mauvaise pratique)
+
+# Aucun chiffrement applicatif détecté
+$ strings /home/user/.config/gestiondestaches3/taches.db | grep -i "motdepasse"
+# → Résultat : affichage des identifiants en clair
