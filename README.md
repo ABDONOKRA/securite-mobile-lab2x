@@ -86,7 +86,10 @@ La sécurité Android repose sur une structure multi-couches protégeant les don
 * 1. Concepts Fondamentaux :
     *  Objectif principal : Garantir que le système d'exploitation qui démarre est exactement celui prévu par le fabricant, sans aucune modification malveillante.
 
-* Chain of Trust (Chaîne de confiance) : C'est une série de vérifications où chaque composant matériel ou logiciel vérifie l'authenticité du suivant avant de lui accorder sa confiance, comme une suite de gardiens vérifiant l'identité du suivant.
+* Chain of Trust (Chaîne de confiance) :
+   C'est une série de vérifications où chaque composant matériel ou logiciel vérifie l'authenticité du suivant avant de lui accorder sa confiance, comme une suite de gardiens vérifiant l'identité du suivant.
 
 * Importance de l'intégrité : Si le démarrage est compromis, toutes les protections de sécurité ultérieures peuvent être contournées, comme une forteresse dont la porte principale resterait ouverte.
+  ``` adb shell getprop ro.boot.verifiedbootstate ```
+<img width="960" height="93" alt="image" src="https://github.com/user-attachments/assets/a634409d-2c85-42bc-8a6a-0ee80cf4bc58" />
 
