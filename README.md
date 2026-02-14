@@ -76,5 +76,10 @@ Le périmètre a été défini pour garantir un environnement de test **maîtris
 <img width="450" height="824" alt="image" src="https://github.com/user-attachments/assets/2a26a641-d9f2-456f-aac2-a21df168175b" />
 * Ouvrir un détail (fiche produit/profil)
 
-  
+  # Étape 6 : Lire Android Security (6 lignes max)
+  Lien : https://source.android.com/docs/security
+  <img width="1316" height="742" alt="image" src="https://github.com/user-attachments/assets/a69132d1-d634-47f9-94af-435e64f615e4" />
+  * resume :
+
+La sécurité Android repose sur une structure multi-couches protégeant les données et le système. Le sandboxing isole chaque application dans un environnement fermé pour empêcher l'accès aux données des autres apps. Le modèle de permissions assure un contrôle strict sur l'accès aux ressources sensibles comme les contacts ou la caméra. Enfin, l'isolation et l'intégrité globale verrouillent le système contre les modifications non autorisées. Le rooting compromet ces barrières en offrant un accès total, ce qui brise la structure de protection native. Ce mécanisme est comparable à un bâtiment sécurisé dont on forcerait les portes blindées.
 
