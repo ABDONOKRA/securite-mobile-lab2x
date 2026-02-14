@@ -243,4 +243,74 @@ Pour vos futures présentations, utilisez des outils d'annotation sur vos captur
 besoin dun apparail physique 
 
 
+##  Conclusion Générale de l'Audit
+
+Cet audit de sécurité a permis de valider la robustesse de l'application **GestionDesTaches3** à travers une méthodologie rigoureuse, allant de la contractualisation du périmètre jusqu'à l'analyse technique profonde en environnement rooté.
+
+---
+
+###  Synthèse Technique
+
+L'utilisation des privilèges root (`uid=0`) a été l'élément pivot de cet audit. Elle a permis de **contourner le sandboxing natif d'Android** pour inspecter les artefacts système normalement inaccessibles, tels que :
+
+- Les bases de données privées
+- Les fichiers de préférences
+- Les caches applicatifs
+
+>  **Vérification clé :** Les tests ont confirmé que le rooting brise la **Chain of Trust** (chaîne de confiance), faisant passer l'état du système de **🟢 green** à **🟡 orange/yellow**.
+
+---
+
+###  Conformité aux Standards
+
+L'application a été confrontée aux standards industriels de l'**OWASP** (Open Web Application Security Project) :
+
+| Standard | Référence | Test effectué |
+|----------|-----------|---------------|
+| **MASVS** | STORAGE-1 | Évaluation de la sécurité du stockage local |
+| **MASVS** | NETWORK-1 | Confidentialité des communications réseau |
+| **MASTG** | - | Analyse des logs via `adb logcat` |
+| **MASTG** | - | Inspection directe du filesystem dans `/data/data/` |
+
+---
+
+###  Gestion des Risques et Éthique
+
+Conformément aux principes de la cybersécurité, chaque test a été encadré par une **matrice de risques stricte** :
+
+| Mesure de sécurité | Description |
+|--------------------|-------------|
+|  **Réseau isolé** | Utilisation d'un environnement réseau dédié et sécurisé |
+|  **Données fictives** | Manipulation exclusive de données de test (non réelles) |
+|  **Wipe/Snapshot** | Réinitialisation complète de l'environnement après chaque session |
+
+>  **Garantie :** L'intégrité de l'audit a été préservée grâce à ces mesures défensives appropriées.
+
+---
+
+###  Conclusion Finale
+
+>  **En conclusion :** Bien que le rooting soit une **menace majeure** pour un utilisateur standard en raison de l'exposition accrue de la surface d'attaque, il demeure un **outil d'analyse indispensable en laboratoire**.
+
+La documentation complète de cet environnement (Fiche de traçabilité et Checklist finale) assure :
+
+-  La **valeur probante** de nos résultats
+-  L'**amélioration continue** de la sécurité de l'application auditée
+-  La **traçabilité** complète des tests effectués
+
+---
+
+###  Récapitulatif des livrables
+
+| Livrable | Statut |
+|----------|--------|
+| Fiche de traçabilité |  Complété |
+| Checklist finale |  Complété |
+| Rapport d'audit |  Validé |
+| Recommandations de correctifs |  Transmis |
+
+---
+
+>  *"La sécurité n'est pas un produit, mais un processus."* — Bruce Schneier
+
 
