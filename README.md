@@ -69,6 +69,9 @@ Le périmètre a été défini pour garantir un environnement de test **maîtris
 * Ouvrir l'écran d'accueil
 
 <img width="575" height="1033" alt="image" src="https://github.com/user-attachments/assets/6c5fa84e-5f95-4b34-9a3f-52a7c2a35ccf" />
+* Ouvrir un détail (fiche produit/profil)
+<img width="452" height="932" alt="image" src="https://github.com/user-attachments/assets/d9d04054-bda0-42d8-b20b-79eff5717e8c" />
+
 * Rechercher un item
 <img width="450" height="824" alt="image" src="https://github.com/user-attachments/assets/2a26a641-d9f2-456f-aac2-a21df168175b" />
 * Ouvrir un détail (fiche produit/profil)
