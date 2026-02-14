@@ -110,3 +110,16 @@ Dans un cadre de laboratoire, un environnement privilégié peut aider à plusie
 - **Test de robustesse** : Vérifier si le stockage des données résiste à un attaquant possédant déjà les droits d'administrateur.
 
 - **Cas d'usage concret** : Avec les privilèges root, nous pouvons vérifier si l'application stocke ses données sensibles en clair en se reposant uniquement sur la protection du système (mauvaise pratique) ou si elle implémente son propre chiffrement (bonne pratique).
+- 
+
+##  Étape 11 : Matrice de Risques de l'Audit
+
+| Risque Identifié | Impact sur l'Audit | Mesure d'Atténuation |
+| :--- | :--- | :--- |
+| **Intégrité compromise** | Conclusions biaisées | Utilisation d'images système certifiées |
+| **Fuite de données** | Violation de confidentialité | Utilisation stricte de données fictives |
+| **Instabilité** | Résultats incohérents | Snapshots et resets fréquents de l'AVD |
+| **Persistance** | Fuite d'infos post-test | Nettoyage complet après chaque session |
+| **Effets réseau** | Impact sur tiers | Isolation via réseau de test dédié |
+
+> **Principe de sécurité :** Chaque risque identifié est associé à une mesure d'atténuation pour garantir la fiabilité de la gestion des risques en cybersécurité.
