@@ -218,7 +218,20 @@ Pour les manipulations au niveau du chargeur de démarrage (bootloader) :
 
 >  **Astuce :** Après `adb disable-verity`, un redémarrage (`adb reboot`) est obligatoire pour que les changements prennent effet.
 
+##  Étape 16 : Traçabilité et Documentation Finale
 
+L'audit de l'application **GestionDesTaches3** se conclut par une fiche de traçabilité garantissant la reproductibilité des tests.
+
+| Champ | Données de l'Audit |
+| :--- | :--- |
+| **Auteur / Date** | Abdelghafour / [Date du jour] |
+| **Environnement** | Émulateur Android (API 29+) |
+| **Statut Root** |  Confirmé (`uid=0`) |
+| **Intégrité Système** |  Compromise (`orange/yellow`) |
+| **Reset Effectué** |  Oui (Wipe data/Snapshot) |
+
+###  Conseil de Documentation
+Pour vos futures présentations, utilisez des outils d'annotation sur vos captures d'écran pour pointer précisément les éléments critiques (comme l'UID root ou les erreurs de certificat).
 
 
 
