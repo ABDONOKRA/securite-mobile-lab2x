@@ -230,6 +230,9 @@ L'audit de l'application **GestionDesTaches3** se conclut par une fiche de traç
 | **Intégrité Système** |  Compromise (`orange/yellow`) |
 | **Reset Effectué** |  Oui (Wipe data/Snapshot) |
 
+
+<img width="654" height="102" alt="image" src="https://github.com/user-attachments/assets/7541a2b0-56d1-4f86-a823-0737a11dd019" />
+
 ###  Conseil de Documentation
 Pour vos futures présentations, utilisez des outils d'annotation sur vos captures d'écran pour pointer précisément les éléments critiques (comme l'UID root ou les erreurs de certificat).
 
