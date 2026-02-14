@@ -123,3 +123,22 @@ Dans un cadre de laboratoire, un environnement privilégié peut aider à plusie
 | **Effets réseau** | Impact sur tiers | Isolation via réseau de test dédié |
 
 > **Principe de sécurité :** Chaque risque identifié est associé à une mesure d'atténuation pour garantir la fiabilité de la gestion des risques en cybersécurité.
+> 
+## 🛡️ Gestion des Risques et Mesures Défensives
+
+L'audit de sécurité sur un environnement rooté nécessite des protocoles stricts, comparables à la manipulation de substances dangereuses en laboratoire.
+
+###  Matrice des Risques (Étape 11)
+- **Intégrité** : Risque de conclusions biaisées sur la sécurité réelle.
+- **Confidentialité** : Fuite possible si des données réelles sont présentes.
+- **Traçabilité** : Risque d'incapacité à reproduire les tests sans logs précis.
+
+###  Mesures de Protection Appliquées (Étape 12)
+| Mesure | Objectif de Sécurité |
+| :--- | :--- |
+| **Isolation Réseau** | Éviter les communications non contrôlées. |
+| **Données Fictives** | Zéro risque de fuite réelle. |
+| **Wipe & Snapshot** | Décontamination de l'environnement post-test. |
+| **Zéro Compte Perso** | Étanchéité totale entre vie privée et labo. |
+
+> **Conclusion de l'Audit** : Les vérifications (`adb shell id` -> `uid=0`) ont confirmé que l'environnement est prêt pour l'analyse en profondeur de l'application **GestionDesTaches3** dans un cadre sécurisé et maîtrisé.
