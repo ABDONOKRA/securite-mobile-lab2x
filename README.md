@@ -151,5 +151,34 @@ L'utilisation des privilèges root (`uid=0`) a permis de confronter l'applicatio
 | **STORAGE-1** | Chiffrement des données sensibles au repos. | Vérification des fichiers de stockage local via le shell root. |
 | **NETWORK-1** | Utilisation sécurisée de TLS pour le réseau. | Interception du trafic pour valider la vérification des certificats. |
 
-### 🏁 Conclusion de l'Audit
+###  Conclusion de l'Audit
 Ce laboratoire a permis de démontrer l'importance de la chaîne de confiance (Chain of Trust) et les risques liés à l'élévation de privilèges. Bien que le rooting compromette l'intégrité globale (`verifiedbootstate` passif), il est un outil d'analyse indispensable pour valider la robustesse d'une application face à des attaquants sophistiqués
+
+##  Méthodologie de Test Pratique (OWASP MASTG)
+
+Le passage au mode root a permis d'appliquer le guide de test **MASTG** pour une inspection approfondie de l'application.
+
+| Scénario de Test | Outils & Commandes | Objectif de Sécurité |
+| :--- | :--- | :--- |
+| **Inspection Filesystem** | `cd /data/data/` | Détecter le stockage de données sensibles en clair. |
+| **Analyse Runtime** | `adb logcat` | Identifier les fuites d'informations dans les logs. |
+
+###  Conclusion Générale du Labo
+Cet audit a couvert l'intégralité de la chaîne de sécurité :
+1. **Périmètre** : Définition claire des limites de l'audit.
+2. **Intégrité** : Analyse du Verified Boot et de la Chain of Trust.
+3. **Escalade** : Validation de l'accès root pour l'analyse bas niveau.
+4. **Conformité** : Vérification face aux standards OWASP MASVS/MASTG.
+5. **Éthique** : Application de mesures défensives strictes pour protéger l'environnement de test.
+
+
+
+
+
+
+
+
+
+
+
+
