@@ -173,7 +173,50 @@ Cet audit a couvert l'intégralité de la chaîne de sécurité :
 
 
 
+##  Étape 15 : Rappel de synthèse des commandes de rooting
 
+Cette étape finale sert de guide de référence pour les commandes ADB et Fastboot utilisées lors de votre audit.
+
+---
+
+### 1️ Commandes de base et vérification
+
+| Commande | Description |
+|----------|-------------|
+| `adb devices` | Liste les appareils connectés pour confirmer la communication |
+| `adb root` | Redémarre le serveur ADB avec les privilèges administrateur |
+| `adb remount` | Remonte la partition système en mode lecture/écriture (normalement impossible pour des raisons de sécurité) |
+| `adb shell id` | Vérifie l'identité de l'utilisateur (cherche `uid=0` pour confirmer le root) |
+
+---
+
+### 2️ Option permissive (Désactivation des protections)
+
+Si vous devez modifier des partitions système protégées, ces commandes permettent de contourner les alarmes d'intégrité :
+
+| Commande | Description |
+|----------|-------------|
+| `adb disable-verity` | Désactive le mécanisme de vérification d'intégrité dm-verity |
+| `adb reboot` | Nécessaire pour appliquer les changements de sécurité au démarrage |
+
+---
+
+### 3️ Fastboot (Équipement de laboratoire uniquement)
+
+Pour les manipulations au niveau du chargeur de démarrage (bootloader) :
+
+| Commande | Description |
+|----------|-------------|
+| `fastboot getvar avb_boot_state` | Interroge l'état du Verified Boot 2.0 (AVB) |
+| `fastboot boot magisk_patched.img` | Effectue un démarrage temporaire "systemless" pour rooter l'appareil sans altérer définitivement la partition système |
+
+---
+
+###  Notes importantes
+
+>  **Attention :** Ces commandes sont destinées uniquement à un usage en **environnement de laboratoire contrôlé**. Le rooting peut compromettre la sécurité de l'appareil et annuler sa garantie.
+
+>  **Astuce :** Après `adb disable-verity`, un redémarrage (`adb reboot`) est obligatoire pour que les changements prennent effet.
 
 
 
