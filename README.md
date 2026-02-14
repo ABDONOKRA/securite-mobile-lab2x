@@ -236,7 +236,8 @@ L'audit de l'application **GestionDesTaches3** se conclut par une fiche de traç
 ###  Conseil de Documentation
 Pour vos futures présentations, utilisez des outils d'annotation sur vos captures d'écran pour pointer précisément les éléments critiques (comme l'UID root ou les erreurs de certificat).
 
-
+## Étape 17 : Remise à zéro AVD (obligatoire fin de séance)
+<img width="544" height="735" alt="image" src="https://github.com/user-attachments/assets/2b07fae3-ff90-411e-9639-279d6097f52c" />
 
 
 
