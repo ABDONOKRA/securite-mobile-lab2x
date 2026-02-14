@@ -65,3 +65,7 @@ Le périmètre a été défini pour garantir un environnement de test **maîtris
 # Étape 4 : Installer et lancer l'app de test
 <img width="1733" height="984" alt="image" src="https://github.com/user-attachments/assets/5c784f26-08f9-4d48-8cb1-28d9f1cec291" />
 
+# Étape 5 : Définir 3 scénarios simples
+* Ouvrir l'écran d'accueil
+
+<img width="575" height="1033" alt="image" src="https://github.com/user-attachments/assets/6c5fa84e-5f95-4b34-9a3f-52a7c2a35ccf" />
