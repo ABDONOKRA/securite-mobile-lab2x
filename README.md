@@ -142,3 +142,14 @@ L'audit de sécurité sur un environnement rooté nécessite des protocoles stri
 | **Zéro Compte Perso** | Étanchéité totale entre vie privée et labo. |
 
 > **Conclusion de l'Audit** : Les vérifications (`adb shell id` -> `uid=0`) ont confirmé que l'environnement est prêt pour l'analyse en profondeur de l'application **GestionDesTaches3** dans un cadre sécurisé et maîtrisé.
+> ##  Conformité et Standards (OWASP MASVS)
+
+L'utilisation des privilèges root (`uid=0`) a permis de confronter l'application aux standards industriels de sécurité mobile.
+
+| Exigence OWASP | Description | Application Pratique |
+| :--- | :--- | :--- |
+| **STORAGE-1** | Chiffrement des données sensibles au repos. | Vérification des fichiers de stockage local via le shell root. |
+| **NETWORK-1** | Utilisation sécurisée de TLS pour le réseau. | Interception du trafic pour valider la vérification des certificats. |
+
+### 🏁 Conclusion de l'Audit
+Ce laboratoire a permis de démontrer l'importance de la chaîne de confiance (Chain of Trust) et les risques liés à l'élévation de privilèges. Bien que le rooting compromette l'intégrité globale (`verifiedbootstate` passif), il est un outil d'analyse indispensable pour valider la robustesse d'une application face à des attaquants sophistiqués
